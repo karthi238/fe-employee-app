@@ -40,6 +40,7 @@ const Employees = (props) => {
                     <div className="employees-head">EMPLOYEES</div>
                     <div className="add-button" onClick={() => props.history.push('/addEmployee')}>ADD EMPLOYEE</div>
                 </div>
+                {employeeList.length === 0 && <div style={{color:'#fff'}}>No Results</div>}
                 <div className="employees-list">
                     {employeeList.map((item, index) => {
                         return (
