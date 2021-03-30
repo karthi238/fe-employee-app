@@ -10,7 +10,8 @@ const Routes = () => {
             <Switch>
                 <Route component={Employees} path={['/', '/employees']} exact />
                 <Route component={AddEmployee} path="/addEmployee" exact />
-                <Route component={EmployeeDetails} path="/employeeDetails" exact />
+                <Route component={AddEmployee} path="/editEmployee/:id" exact />
+                <Route component={EmployeeDetails} path="/employeeDetails/:id" exact />
             </Switch>
         </Router>
     )

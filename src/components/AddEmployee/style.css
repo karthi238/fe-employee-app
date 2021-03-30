@@ -1,6 +1,83 @@
-.add-employee-container{
-    min-height: 100vh;
-    justify-content: center;
+.add-employee-container {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.add-employee-inner-container {
+  max-width: 600px;
+  margin: auto;
+}
+.add-employee-head-container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  cursor: pointer;
+}
+.image-style {
+  width: 20px;
+  height: 20px;
+}
+.add-employee-head {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.add-employee-card {
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+  background-color: #ccc;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.add-each-card {
+  max-width: 50%;
+  flex: 0 0 50%;
+  height: 80px;
+}
+.add-top-name {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 90%;
+  height: 40px;
+  background-color: #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.submit-button{
+    padding: 0 20px;
+    height: 35px;
+    background-color: #ccc;
+    border-radius: 3px;
+    display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
 }

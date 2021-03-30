@@ -1,6 +1,59 @@
-.employee-details{
-    min-height: 100vh;
-    justify-content: center;
+.employee-details-container {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.employee-details-inner-container {
+  max-width: 600px;
+  margin: auto;
+}
+.employee-details-head-container{
+    display: flex;
+    height: 70px;
     align-items: center;
-    width: 100%;
+    cursor: pointer;
+}
+.image-style{
+    width: 20px;
+    height: 20px;
+}
+.employee-details-head {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.employee-details-card {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  background-color: #ccc;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.each-card {
+  max-width: 33.33%;
+  flex: 0 0 33.33%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-name{
+    color: rgba(0,0,0,0.5);
+    font-size: 16px;
+}
+.bottom-name{
+    color: rgba(0,0,0,0.9);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: center;
 }
